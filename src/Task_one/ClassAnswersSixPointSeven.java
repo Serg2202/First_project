@@ -2,28 +2,37 @@ package Task_one;
 
 import java.util.Scanner;
 
-/**
- * Created by USER on 21.10.2016.
- */
+// 6.Ввести с консоли n целых чисел. На консоль вывести: 6.7. Элементы, которые равны полусумме соседних элементов.
 public class ClassAnswersSixPointSeven {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите элементы, которые равны полусумме соседних элементов: ");
+        int[] numbers;
         String s;
-        s = in.nextLine();
-        /*сюда нужно добавить еще один цикл, который будет преобразовывать введенные числа и передевать их в массив.
-        Т.е. у нас по сути будет 2 массива.*/
-for (int i=0; i<s.length();i++){
 
-}
+        //region Read value - здесь у нас блок "Получение исходных данных". На выходе блока будет строка.
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите через пробел числа от 1 до 9");
+        s = in.nextLine(); //2 7 1 5 6 4 2 2
+        //endregion
 
 
+        //region - Здесь у нас "технический блок" - преобразуем/парсим введенные строки к масиссиву целых чисел.
+        String[] arrayString = s.split(" ");
+        numbers = new int[arrayString.length];
+        for (int i = 0; i < arrayString.length; i++) {
+            numbers[i] = Integer.parseInt(arrayString[i]);
 
-        int[] numbers =  {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        for (int i=1; i<numbers.length-1; i++){
-            if (numbers[i]==(numbers[i-1]+numbers[i+1])/2){
-                System.out.println(numbers[i]);
-            };
         }
+        //endregion
+
+
+        //region - блок бизнес-логики. здесь мы работаем с целыми числами и здесь непосредственно выполняется наше задание.
+
+        for (int i = 1; i < numbers.length - 1; i++) {
+            if (numbers[i] == (numbers[i - 1] + numbers[i + 1]) / 2) {
+                System.out.println(numbers[i]);
+            }
+            ;
+        }
+        //endregion
     }
 }
