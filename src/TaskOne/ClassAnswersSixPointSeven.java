@@ -1,4 +1,4 @@
-package Task_one;
+package TaskOne;
 
 import java.util.Scanner;
 
@@ -25,7 +25,7 @@ public class ClassAnswersSixPointSeven {
         //endregion
 
 
-        //region - блок бизнес-логики. здесь мы работаем с целыми числами и здесь непосредственно выполняется наше задание.
+        //region - Здесь у нас блок бизнес-логики. здесь мы работаем с целыми числами и здесь непосредственно выполняется наше задание.
 
         for (int i = 1; i < numbers.length - 1; i++) {
             if (numbers[i] == (numbers[i - 1] + numbers[i + 1]) / 2) {

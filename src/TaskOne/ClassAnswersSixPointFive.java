@@ -1,4 +1,4 @@
-package Task_one;
+package TaskOne;
 
 import java.util.Scanner;
 
@@ -8,6 +8,7 @@ import java.util.Scanner;
 */
 public class ClassAnswersSixPointFive {
     public static void main(String[] args) {
+        //region - здесь у нас блок "Получение исходных данных". Объявлен массив интов.
         Scanner in = new Scanner(System.in);
         String res = "";
         System.out.println("Введите целые 3-х значные числа: ");
@@ -15,7 +16,9 @@ public class ClassAnswersSixPointFive {
         for (int i = 0; i < nums.length; i++) {
             nums[i] = in.nextInt();
         }
+        //endregion
 
+        //region - Здесь у нас блок бизнес-логики. здесь у нас непосредственно выполняется сценарий обработки введенных чисели их сравнение.
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] >= 100 && nums[i] <= 999) {
@@ -30,6 +33,7 @@ public class ClassAnswersSixPointFive {
                 }
             }
         }
+        //endregion
         System.out.println("Не содержат одинаковых цифер: " + res);
     }
 }

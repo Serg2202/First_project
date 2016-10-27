@@ -1,6 +1,5 @@
-package Task_one;
+package TaskOne;
 
-import java.util.Random;
 import java.util.Scanner;
 
 //ответ по заданию №3 - Вывести заданное количество случайных чисел с переходом и без перехода на новую строку.

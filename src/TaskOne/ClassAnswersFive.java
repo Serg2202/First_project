@@ -1,4 +1,4 @@
-package Task_one;
+package TaskOne;
 
 import java.util.Scanner;
 
@@ -7,8 +7,10 @@ import java.util.Scanner;
 public class ClassAnswersFive {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
         System.out.println("Введите первое число: ");
         int a = in.nextInt();
+
         System.out.println("Введите второе число: ");
         int b = in.nextInt();
         int sum = a + b;

@@ -1,4 +1,4 @@
-package Task_one;
+package TaskOne;
 
 public class ClassAnswersSixPointSix {
 
