@@ -1,4 +1,4 @@
-package TaskOne;
+package Home.TaskOne;
 
 import java.util.Scanner;
 

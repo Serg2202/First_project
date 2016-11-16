@@ -1,10 +1,8 @@
-package TaskTwo;
+package Home.TaskTwo;
 
 //Задание 6 - Ввести n чисел с консоли.
 // Найти число, цифры в котором идут в строгом порядке возрастания. Если таких чисел несколько, найти первое из них.
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ClassAnswersSix {

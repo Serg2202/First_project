@@ -1,4 +1,4 @@
-package TaskTwo;
+package Home.TaskTwo;
 
 import java.util.Scanner;
 
